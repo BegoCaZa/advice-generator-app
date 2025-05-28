@@ -71,12 +71,17 @@ export const StyledCardButton = styled.button`
   align-items: center;
   cursor: pointer;
 
-  /* &:hover {
-    opacity: 0.8;
-  } */
+  &:hover {
+    box-shadow: 0px 0px 30px ${COLORS.neonGreen};
+  }
 `;
 
 export const StyledDiceImage = styled.img`
   width: 24px;
   height: 24px;
+  transition: transform 0.7s ease;
+
+  &:hover {
+    transform: rotate(180deg);
+  }
 `;
